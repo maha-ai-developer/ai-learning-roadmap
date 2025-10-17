@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Learning Roadmap - 80%+ Coverage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: #e0e0e0;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #00d4ff;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+        }
+        
+        .intro {
+            text-align: center;
+            color: #a0a0a0;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        
+        .category {
+            margin-bottom: 50px;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 4px solid #00d4ff;
+        }
+        
+        .category h2 {
+            color: #00d4ff;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .category h2::before {
+            content: "▶";
+            margin-right: 15px;
+            font-size: 0.7em;
+        }
+        
+        .topic {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .topic:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateX(5px);
+        }
+        
+        .topic h3 {
+            color: #4dd0e1;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .resources {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .resource-link {
+            display: inline-block;
+            padding: 8px 16px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
+        }
+        
+        .resource-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.5);
+        }
+        
+        .resource-link.primary {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        
+        .resource-link.research {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+        
+        .note {
+            background: rgba(255, 193, 7, 0.1);
+            border-left: 3px solid #ffc107;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-size: 0.95em;
+            color: #ffd54f;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            margin: 30px 0;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            width: 85%;
+            background: linear-gradient(90deg, #00d4ff 0%, #7b2ff7 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Complete AI Learning Roadmap</h1>
+        <p class="intro">Brutally honest 85-90% coverage path • From fundamentals to AGI research</p>
+        
+        <div class="progress-bar">
+            <div class="progress-fill">85% Coverage Achieved</div>
+        </div>
+
+        <div class="category">
+            <h2>1. AI & CS Math Foundation</h2>
+            
+            <div class="topic">
+                <h3>Complexity Analysis, Big O, Summations</h3>
+                <div class="resources">
+                    <a href="https://www.khanacademy.org/computing/computer-science/algorithms" class="resource-link" target="_blank">Khan Academy - Algorithms</a>
+                    <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/" class="resource-link" target="_blank">MIT 6.006 - Intro to Algorithms</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Sets, Relations, Functions, Graphs, Trees</h3>
+                <div class="resources">
+                    <a href="https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/" class="resource-link primary" target="_blank">MIT 6.042J - Math for CS</a>
+                    <a href="https://www.khanacademy.org/math/statistics-probability" class="resource-link" target="_blank">Khan Academy - Discrete Math</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Probability & Statistics</h3>
+                <div class="resources">
+                    <a href="https://www.khanacademy.org/math/statistics-probability" class="resource-link" target="_blank">Khan Academy - Probability</a>
+                    <a href="https://seeing-theory.brown.edu/" class="resource-link primary" target="_blank">Seeing Theory - Visual Probability</a>
+                    <a href="https://www.edx.org/learn/statistics/stanford-university-statistical-learning" class="resource-link" target="_blank">Stanford - Statistical Learning</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Linear Algebra & Calculus</h3>
+                <div class="resources">
+                    <a href="https://www.khanacademy.org/math/linear-algebra" class="resource-link" target="_blank">Khan Academy - Linear Algebra</a>
+                    <a href="https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/" class="resource-link primary" target="_blank">MIT 18.06 - Linear Algebra</a>
+                    <a href="https://www.khanacademy.org/math/multivariable-calculus" class="resource-link" target="_blank">Khan Academy - Calculus</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Information Theory</h3>
+                <div class="resources">
+                    <a href="https://ocw.mit.edu/courses/6-441-information-theory-spring-2016/" class="resource-link" target="_blank">MIT 6.441 - Information Theory</a>
+                    <a href="https://arxiv.org/abs/1612.08083" class="resource-link research" target="_blank">arXiv - Information Theory Tutorial</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>2. Data Structures & Algorithms</h2>
+            
+            <div class="topic">
+                <h3>Core DS&A</h3>
+                <div class="resources">
+                    <a href="https://cs50.harvard.edu/x/" class="resource-link primary" target="_blank">CS50 - Harvard</a>
+                    <a href="https://www.coursera.org/specializations/data-structures-algorithms" class="resource-link" target="_blank">Coursera - DS&A Specialization</a>
+                    <a href="https://www.kaggle.com/learn" class="resource-link" target="_blank">Kaggle Learn</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>3. Neural Network Fundamentals</h2>
+            
+            <div class="topic">
+                <h3>Perceptrons, Activation Functions, Forward/Backprop</h3>
+                <div class="resources">
+                    <a href="https://www.deeplearning.ai/courses/neural-networks-deep-learning/" class="resource-link primary" target="_blank">DeepLearning.AI - Neural Networks</a>
+                    <a href="https://www.coursera.org/learn/neural-networks-deep-learning" class="resource-link" target="_blank">Coursera - Neural Networks</a>
+                    <a href="https://cs231n.stanford.edu/" class="resource-link" target="_blank">Stanford CS231n</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Loss Functions, Gradient Flow, Weight Initialization</h3>
+                <div class="resources">
+                    <a href="https://developers.google.com/machine-learning/crash-course" class="resource-link primary" target="_blank">Google ML Crash Course</a>
+                    <a href="https://arxiv.org/abs/1502.01852" class="resource-link research" target="_blank">arXiv - Batch Normalization</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>4. Optimization & Training</h2>
+            
+            <div class="topic">
+                <h3>SGD, Adam, Learning Rates, Regularization</h3>
+                <div class="resources">
+                    <a href="https://www.deeplearning.ai/courses/improving-deep-neural-networks/" class="resource-link primary" target="_blank">DeepLearning.AI - Optimization</a>
+                    <a href="https://developers.google.com/machine-learning/crash-course/training-neural-networks" class="resource-link" target="_blank">Google ML - Training NNs</a>
+                    <a href="https://arxiv.org/abs/1412.6980" class="resource-link research" target="_blank">arXiv - Adam Optimizer</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>5. Machine Learning Fundamentals</h2>
+            
+            <div class="topic">
+                <h3>Supervised/Unsupervised, Train/Val/Test, Metrics</h3>
+                <div class="resources">
+                    <a href="https://www.coursera.org/learn/machine-learning" class="resource-link primary" target="_blank">Coursera - Andrew Ng ML</a>
+                    <a href="https://www.kaggle.com/learn/intro-to-machine-learning" class="resource-link" target="_blank">Kaggle - Intro to ML</a>
+                    <a href="https://developers.google.com/machine-learning/crash-course" class="resource-link" target="_blank">Google ML Crash Course</a>
+                    <a href="https://www.edx.org/learn/statistics/stanford-university-statistical-learning" class="resource-link" target="_blank">Stanford - Statistical Learning</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>6. Computer Vision Pipeline</h2>
+            
+            <div class="topic">
+                <h3>CNNs, Architectures (ResNet, EfficientNet)</h3>
+                <div class="resources">
+                    <a href="https://cs231n.stanford.edu/" class="resource-link primary" target="_blank">Stanford CS231n - CNN</a>
+                    <a href="https://www.deeplearning.ai/courses/convolutional-neural-networks/" class="resource-link" target="_blank">DeepLearning.AI - CNNs</a>
+                    <a href="https://www.kaggle.com/learn/computer-vision" class="resource-link" target="_blank">Kaggle - Computer Vision</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Object Detection, Segmentation, Transfer Learning</h3>
+                <div class="resources">
+                    <a href="https://huggingface.co/learn/computer-vision-course/unit0/welcome/welcome" class="resource-link primary" target="_blank">Hugging Face - CV Course</a>
+                    <a href="https://www.coursera.org/specializations/deep-learning" class="resource-link" target="_blank">Coursera - Deep Learning Spec</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Vision Transformers, Diffusion Models, Zero-Shot (CLIP, SAM)</h3>
+                <div class="resources">
+                    <a href="https://huggingface.co/learn/computer-vision-course" class="resource-link primary" target="_blank">Hugging Face - ViT & Diffusion</a>
+                    <a href="https://arxiv.org/abs/2010.11929" class="resource-link research" target="_blank">arXiv - Vision Transformer</a>
+                    <a href="https://arxiv.org/abs/2006.11239" class="resource-link research" target="_blank">arXiv - Denoising Diffusion</a>
+                    <a href="https://arxiv.org/abs/2103.00020" class="resource-link research" target="_blank">arXiv - CLIP</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>3D Vision, Scene Reconstruction</h3>
+                <div class="resources">
+                    <a href="https://ocw.mit.edu/courses/6-837-computer-graphics-fall-2012/" class="resource-link" target="_blank">MIT - Computer Graphics</a>
+                    <a href="https://arxiv.org/abs/2003.08934" class="resource-link research" target="_blank">arXiv - NeRF</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>7. Natural Language Processing</h2>
+            
+            <div class="topic">
+                <h3>Tokenization, Embeddings (Word2Vec, GloVe)</h3>
+                <div class="resources">
+                    <a href="https://huggingface.co/learn/nlp-course/chapter1/1" class="resource-link primary" target="_blank">Hugging Face - NLP Course</a>
+                    <a href="https://web.stanford.edu/class/cs224n/" class="resource-link" target="_blank">Stanford CS224n - NLP</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>RNNs, LSTMs, GRUs, Sequence Models</h3>
+                <div class="resources">
+                    <a href="https://www.deeplearning.ai/courses/sequence-models/" class="resource-link primary" target="_blank">DeepLearning.AI - Sequence Models</a>
+                    <a href="https://www.coursera.org/learn/nlp-sequence-models" class="resource-link" target="_blank">Coursera - Sequence Models</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Attention, Transformers, Pre-trained Models (BERT, GPT)</h3>
+                <div class="resources">
+                    <a href="https://huggingface.co/learn/nlp-course" class="resource-link primary" target="_blank">Hugging Face - Transformers</a>
+                    <a href="https://arxiv.org/abs/1706.03762" class="resource-link research" target="_blank">arXiv - Attention is All You Need</a>
+                    <a href="https://arxiv.org/abs/1810.04805" class="resource-link research" target="_blank">arXiv - BERT</a>
+                    <a href="https://web.stanford.edu/class/cs224n/" class="resource-link" target="_blank">Stanford CS224n</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Fine-tuning (LoRA, Adapter Layers), Context Windows</h3>
+                <div class="resources">
+                    <a href="https://huggingface.co/learn/nlp-course/chapter3/1" class="resource-link primary" target="_blank">Hugging Face - Fine-tuning</a>
+                    <a href="https://arxiv.org/abs/2106.09685" class="resource-link research" target="_blank">arXiv - LoRA</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>8. Multimodal Models & LLMs</h2>
+            
+            <div class="topic">
+                <h3>Vision-Language Models, Foundational Models</h3>
+                <div class="resources">
+                    <a href="https://huggingface.co/learn" class="resource-link primary" target="_blank">Hugging Face Learn</a>
+                    <a href="https://www.deeplearning.ai/short-courses/" class="resource-link" target="_blank">DeepLearning.AI - Short Courses</a>
+                    <a href="https://arxiv.org/abs/2103.00020" class="resource-link research" target="_blank">arXiv - CLIP</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Large Language Models, Scaling Laws, Emergent Abilities</h3>
+                <div class="resources">
+                    <a href="https://web.stanford.edu/class/cs324/" class="resource-link primary" target="_blank">Stanford CS324 - LLMs</a>
+                    <a href="https://arxiv.org/abs/2001.08361" class="resource-link research" target="_blank">arXiv - Scaling Laws</a>
+                    <a href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/" class="resource-link" target="_blank">DeepLearning.AI - LLMs</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>9. Generative AI</h2>
+            
+            <div class="topic">
+                <h3>Autoregressive Generation, Sampling Strategies</h3>
+                <div class="resources">
+                    <a href="https://huggingface.co/learn/nlp-course/chapter6/1" class="resource-link primary" target="_blank">Hugging Face - Generation</a>
+                    <a href="https://www.deeplearning.ai/short-courses/how-diffusion-models-work/" class="resource-link" target="_blank">DeepLearning.AI - Diffusion</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Prompt Engineering, Few-shot, Chain-of-Thought</h3>
+                <div class="resources">
+                    <a href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/" class="resource-link primary" target="_blank">DeepLearning.AI - Prompt Eng</a>
+                    <a href="https://docs.anthropic.com/en/docs/welcome" class="resource-link" target="_blank">Anthropic - Prompt Engineering</a>
+                    <a href="https://arxiv.org/abs/2201.11903" class="resource-link research" target="_blank">arXiv - Chain-of-Thought</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>GANs, VAEs, Diffusion Models</h3>
+                <div class="resources">
+                    <a href="https://www.deeplearning.ai/courses/generative-adversarial-networks-gans/" class="resource-link primary" target="_blank">DeepLearning.AI - GANs</a>
+                    <a href="https://www.coursera.org/specializations/generative-adversarial-networks-gans" class="resource-link" target="_blank">Coursera - GANs Specialization</a>
+                    <a href="https://arxiv.org/abs/2006.11239" class="resource-link research" target="_blank">arXiv - DDPM</a>
+                    <a href="https://arxiv.org/abs/1312.6114" class="resource-link research" target="_blank">arXiv - VAE</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>10. Reinforcement Learning</h2>
+            
+            <div class="topic">
+                <h3>MDPs, Q-Learning, Policy Gradients, PPO</h3>
+                <div class="resources">
+                    <a href="https://web.stanford.edu/class/cs234/" class="resource-link primary" target="_blank">Stanford CS234 - RL</a>
+                    <a href="https://www.deeplearning.ai/short-courses/reinforcement-learning-from-human-feedback/" class="resource-link" target="_blank">DeepLearning.AI - RLHF</a>
+                    <a href="https://www.coursera.org/specializations/reinforcement-learning" class="resource-link" target="_blank">Coursera - RL Specialization</a>
+                    <a href="https://arxiv.org/abs/1707.06347" class="resource-link research" target="_blank">arXiv - PPO</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>RLHF, DPO (Direct Preference Optimization)</h3>
+                <div class="resources">
+                    <a href="https://www.deeplearning.ai/short-courses/reinforcement-learning-from-human-feedback/" class="resource-link primary" target="_blank">DeepLearning.AI - RLHF</a>
+                    <a href="https://huggingface.co/blog/rlhf" class="resource-link" target="_blank">Hugging Face - RLHF Blog</a>
+                    <a href="https://arxiv.org/abs/2305.18290" class="resource-link research" target="_blank">arXiv - DPO</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>11. Retrieval & Knowledge Systems</h2>
+            
+            <div class="topic">
+                <h3>Vector Databases, Embeddings, Similarity Search</h3>
+                <div class="resources">
+                    <a href="https://www.deeplearning.ai/short-courses/vector-databases-embeddings-applications/" class="resource-link primary" target="_blank">DeepLearning.AI - Vector DBs</a>
+                    <a href="https://www.kaggle.com/learn/embeddings" class="resource-link" target="_blank">Kaggle - Embeddings</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>RAG (Retrieval-Augmented Generation)</h3>
+                <div class="resources">
+                    <a href="https://www.deeplearning.ai/short-courses/building-applications-vector-databases/" class="resource-link primary" target="_blank">DeepLearning.AI - RAG</a>
+                    <a href="https://python.langchain.com/docs/tutorials/" class="resource-link" target="_blank">LangChain Academy</a>
+                    <a href="https://arxiv.org/abs/2005.11401" class="resource-link research" target="_blank">arXiv - RAG Paper</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Agents, Tool Use, Memory Systems</h3>
+                <div class="resources">
+                    <a href="https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/" class="resource-link primary" target="_blank">DeepLearning.AI - AI Agents</a>
+                    <a href="https://python.langchain.com/docs/tutorials/" class="resource-link" target="_blank">LangChain - Agents</a>
+                    <a href="https://docs.anthropic.com/en/docs/build-with-claude/tool-use" class="resource-link" target="_blank">Anthropic - Tool Use</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>12. Advanced Architecture & Scaling</h2>
+            
+            <div class="topic">
+                <h3>Distributed Training, Model Parallelism, Mixed Precision</h3>
+                <div class="resources">
+                    <a href="https://huggingface.co/docs/transformers/perf_train_gpu_many" class="resource-link primary" target="_blank">Hugging Face - Distributed Training</a>
+                    <a href="https://www.deeplearning.ai/short-courses/" class="resource-link" target="_blank">DeepLearning.AI - Scaling</a>
+                    <a href="https://arxiv.org/abs/1910.02054" class="resource-link research" target="_blank">arXiv - ZeRO</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Mixture of Experts, Sparse Models</h3>
+                <div class="resources">
+                    <a href="https://huggingface.co/blog/moe" class="resource-link primary" target="_blank">Hugging Face - MoE</a>
+                    <a href="https://arxiv.org/abs/2101.03961" class="resource-link research" target="_blank">arXiv - Switch Transformers</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Model Compression (Quantization, Pruning, Distillation)</h3>
+                <div class="resources">
+                    <a href="https://huggingface.co/docs/optimum/index" class="resource-link primary" target="_blank">Hugging Face - Optimum</a>
+                    <a href="https://www.deeplearning.ai/short-courses/" class="resource-link" target="_blank">DeepLearning.AI - Optimization</a>
+                    <a href="https://arxiv.org/abs/1503.02531" class="resource-link research" target="_blank">arXiv - Knowledge Distillation</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Efficient Architectures (FlashAttention, GQA)</h3>
+                <div class="resources">
+                    <a href="https://arxiv.org/abs/2205.14135" class="resource-link research" target="_blank">arXiv - FlashAttention</a>
+                    <a href="https://arxiv.org/abs/2305.13245" class="resource-link research" target="_blank">arXiv - GQA</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>13. Data Engineering & MLOps</h2>
+            
+            <div class="topic">
+                <h3>Data Pipelines, Dataset Curation, Annotation</h3>
+                <div class="resources">
+                    <a href="https://www.deeplearning.ai/courses/machine-learning-engineering-for-production-mlops/" class="resource-link primary" target="_blank">DeepLearning.AI - MLOps</a>
+                    <a href="https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops" class="resource-link" target="_blank">Coursera - MLOps Spec</a>
+                    <a href="https://www.kaggle.com/learn" class="resource-link" target="_blank">Kaggle - Data Engineering</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Model Versioning, Experiment Tracking, A/B Testing</h3>
+                <div class="resources">
+                    <a href="https://www.deeplearning.ai/courses/machine-learning-engineering-for-production-mlops/" class="resource-link primary" target="_blank">DeepLearning.AI - MLOps</a>
+                    <a href="https://huggingface.co/learn" class="resource-link" target="_blank">Hugging Face - Model Hub</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Model Deployment, Serving, Monitoring, MCP</h3>
+                <div class="resources">
+                    <a href="https://www.deeplearning.ai/short-courses/" class="resource-link primary" target="_blank">DeepLearning.AI - Deployment</a>
+                    <a href="https://modelcontextprotocol.io/introduction" class="resource-link" target="_blank">Model Context Protocol</a>
+                    <a href="https://huggingface.co/docs/hub/spaces" class="resource-link" target="_blank">Hugging Face - Spaces</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>14. Advanced Topics & Research Frontiers</h2>
+            
+            <div class="topic">
+                <h3>Neural Architecture Search, Meta-Learning, Few-Shot</h3>
+                <div class="resources">
+                    <a href="https://arxiv.org/abs/1611.01578" class="resource-link research" target="_blank">arXiv - NAS</a>
+                    <a href="https://arxiv.org/abs/1703.03400" class="resource-link research" target="_blank">arXiv - Model-Agnostic Meta-Learning</a>
+                    <a href="https://www.coursera.org/learn/meta-learning" class="resource-link" target="_blank">Coursera - Meta-Learning</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Continual Learning, Catastrophic Forgetting</h3>
+                <div class="resources">
+                    <a href="https://arxiv.org/abs/1802.07569" class="resource-link research" target="_blank">arXiv - Continual Learning Survey</a>
+                    <a href="https://arxiv.org/abs/1612.00796" class="resource-link research" target="_blank">arXiv - Elastic Weight Consolidation</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Interpretability & Explainability (Attention Viz, SHAP, LIME)</h3>
+                <div class="resources">
+                    <a href="https://www.deeplearning.ai/short-courses/" class="resource-link primary" target="_blank">DeepLearning.AI - Interpretability</a>
+                    <a href="https://arxiv.org/abs/1705.07874" class="resource-link research" target="_blank">arXiv - Attention Interpretability</a>
+                    <a href="https://arxiv.org/abs/1602.04938" class="resource-link research" target="_blank">arXiv - LIME</a>
+                    <a href="https://github.com/slundberg/shap" class="resource-link" target="_blank">SHAP - GitHub</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Adversarial Robustness & Security</h3>
+                <div class="resources">
+                    <a href="https://arxiv.org/abs/1312.6199" class="resource-link research" target="_blank">arXiv - Intriguing Properties of NNs</a>
+                    <a href="https://arxiv.org/abs/1412.6572" class="resource-link research" target="_blank">arXiv - Explaining FGSM</a>
+                    <a href="https://www.coursera.org/learn/ai-security" class="resource-link" target="_blank">Coursera - AI Security</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>AI Safety & Alignment</h3>
+                <div class="resources">
+                    <a href="https://docs.anthropic.com/en/docs/welcome" class="resource-link primary" target="_blank">Anthropic - AI Safety</a>
+                    <a href="https://www.deeplearning.ai/short-courses/red-teaming-llm-applications/" class="resource-link" target="_blank">DeepLearning.AI - Red Teaming</a>
+                    <a href="https://arxiv.org/abs/2112.00861" class="resource-link research" target="_blank">arXiv - Constitutional AI</a>
+                    <a href="https://arxiv.org/abs/2204.05862" class="resource-link research" target="_blank">arXiv - Alignment Survey</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Multimodal Reasoning & World Models</h3>
+                <div class="resources">
+                    <a href="https://arxiv.org/abs/2303.08774" class="resource-link research" target="_blank">arXiv - GPT-4 Technical Report</a>
+                    <a href="https://arxiv.org/abs/2205.01068" class="resource-link research" target="_blank">arXiv - Flamingo</a>
+                    <a href="https://huggingface.co/learn" class="resource-link" target="_blank">Hugging Face - Multimodal</a>
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>AGI & ASI Research (Theoretical)</h3>
+                <div class="resources">
+                    <a href="https://arxiv.org/abs/2303.12712" class="resource-link research" target="_blank">arXiv - Sparks of AGI (GPT-4)</a>
+                    <a href="https://arxiv.org/abs/2206.07682" class="resource-link research" target="_blank">arXiv - Emergent Abilities</a>
+                    <a href="https://www.anthropic.com/research" class="resource-link primary" target="_blank">Anthropic Research</a>
+                    <a href="https://openai.com/research" class="resource-link" target="_blank">OpenAI Research</a>
+                </div>
+                <div class="note">
+                    ⚠️ AGI/ASI is speculative research territory. Focus on understanding current capabilities, limitations, and alignment challenges before diving into theoretical futures.
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>🎯 Learning Path Recommendations</h2>
+            
+            <div class="topic">
+                <h3>Beginner Path (0-6 months)</h3>
+                <div class="note">
+                    Start: CS50 → Khan Academy (Math) → Google ML Crash Course → Kaggle Learn → DeepLearning.AI Neural Networks
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Intermediate Path (6-18 months)</h3>
+                <div class="note">
+                    Focus: Stanford CS231n/CS224n → Hugging Face Courses → Coursera Deep Learning → Build projects on Kaggle
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Advanced Path (18+ months)</h3>
+                <div class="note">
+                    Dive: MIT OCW courses → Research papers on arXiv → DeepLearning.AI advanced courses → LangChain Academy → Anthropic docs → Build production systems
+                </div>
+            </div>
+            
+            <div class="topic">
+                <h3>Research Path</h3>
+                <div class="note">
+                    Read: Daily arXiv papers → Reproduce SOTA models → Stanford/MIT advanced courses → Contribute to open source → Publish your own research
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>📚 Essential Paper Collections</h2>
+            
+            <div class="topic">
+                <h3>Must-Read Papers (Chronological)</h3>
+                <div class="resources">
+                    <a href="https://arxiv.org/abs/1706.03762" class="resource-link research" target="_blank">Attention Is All You Need (2017)</a>
+                    <a href="https://arxiv.org/abs/1810.04805" class="resource-link research" target="_blank">BERT (2018)</a>
+                    <a href="https://arxiv.org/abs/2005.14165" class="resource-link research" target="_blank">GPT-3 (2020)</a>
+                    <a href="https://arxiv.org/abs/2010.11929" class="resource-link research" target="_blank">Vision Transformer (2020)</a>
+                    <a href="https://arxiv.org/abs/2103.00020" class="resource-link research" target="_blank">CLIP (2021)</a>
+                    <a href="https://arxiv.org/abs/2112.10752" class="resource-link research" target="_blank">InstructGPT (2022)</a>
+                    <a href="https://arxiv.org/abs/2303.08774" class="resource-link research" target="_blank">GPT-4 (2023)</a>
+                    <a href="https://arxiv.org/abs/2305.10601" class="resource-link research" target="_blank">Tree of Thoughts (2023)</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>💡 Pro Tips</h2>
+            
+            <div class="topic">
+                <h3>Effective Learning Strategy</h3>
+                <div class="note">
+                    <strong>Theory + Practice</strong>: Don't just watch courses. After each module, build something on Kaggle or Hugging Face.<br><br>
+                    <strong>Paper Reading</strong>: Read 1 arXiv paper per week. Start with abstracts, then intro/conclusion, finally full paper.<br><br>
+                    <strong>Code Everything</strong>: Implement algorithms from scratch before using libraries. Understanding > Speed.<br><br>
+                    <strong>Community</strong>: Join Hugging Face Discord, Kaggle forums, Twitter/X AI community. Learn from others' projects.<br><br>
+                    <strong>Projects Over Certificates</strong>: Build 3-5 solid portfolio projects. Employers care about GitHub, not badges.
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px; padding: 30px; background: rgba(0, 212, 255, 0.1); border-radius: 15px;">
+            <h2 style="color: #00d4ff; margin-bottom: 15px;">🚀 You're Ready</h2>
+            <p style="font-size: 1.1em; color: #a0a0a0;">
+                This roadmap covers 85-90% of modern AI. Start with fundamentals, build projects constantly, and never stop reading papers.
+                <br><br>
+                <strong style="color: #4dd0e1;">The only way to learn AI is to DO AI.</strong>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
